@@ -14,6 +14,7 @@
 		4D5FCFAC1CAB969900AD1F96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5FCFAA1CAB969900AD1F96 /* LaunchScreen.storyboard */; };
 		4D5FCFB71CAB969900AD1F96 /* CustomColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FCFB61CAB969900AD1F96 /* CustomColorTests.swift */; };
 		4D5FCFC21CAB969900AD1F96 /* CustomColorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FCFC11CAB969900AD1F96 /* CustomColorUITests.swift */; };
+		4D5FCFD11CAB970E00AD1F96 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FCFD01CAB970E00AD1F96 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4D5FCFBD1CAB969900AD1F96 /* CustomColorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomColorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5FCFC11CAB969900AD1F96 /* CustomColorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorUITests.swift; sourceTree = "<group>"; };
 		4D5FCFC31CAB969900AD1F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5FCFD01CAB970E00AD1F96 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Color.swift; path = Sources/Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		4D5FCF951CAB969900AD1F96 = {
 			isa = PBXGroup;
 			children = (
+				4D5FCFCF1CAB970300AD1F96 /* Source */,
 				4D5FCFA01CAB969900AD1F96 /* CustomColor */,
 				4D5FCFB51CAB969900AD1F96 /* CustomColorTests */,
 				4D5FCFC01CAB969900AD1F96 /* CustomColorUITests */,
@@ -123,6 +126,14 @@
 				4D5FCFC31CAB969900AD1F96 /* Info.plist */,
 			);
 			path = CustomColorUITests;
+			sourceTree = "<group>";
+		};
+		4D5FCFCF1CAB970300AD1F96 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4D5FCFD01CAB970E00AD1F96 /* Color.swift */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			files = (
 				4D5FCFA41CAB969900AD1F96 /* ViewController.swift in Sources */,
 				4D5FCFA21CAB969900AD1F96 /* AppDelegate.swift in Sources */,
+				4D5FCFD11CAB970E00AD1F96 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomColor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hmhm.CustomColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomColor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hmhm.CustomColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
